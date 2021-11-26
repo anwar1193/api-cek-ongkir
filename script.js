@@ -4,6 +4,7 @@ $(document).ready(function () {
   function tampil_provinsi() {
     $.ajax({
       url: "https://api.rajaongkir.com/starter/province",
+      headers: {  'Access-Control-Allow-Origin': 'https://anwar1193.github.io/' },
       type: "get",
       dataType: "json",
       data: {
